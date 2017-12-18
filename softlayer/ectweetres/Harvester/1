@@ -1,0 +1,11 @@
+nohup: appending output to 'nohup.out'
+Traceback (most recent call last):
+  File "harvester_classifier.py", line 337, in <module>
+    twitterStream.filter(follow=settings.follows,track=settings.tracks)
+  File "/usr/local/lib/python2.7/dist-packages/tweepy/streaming.py", line 445, in filter
+    self._start(async)
+  File "/usr/local/lib/python2.7/dist-packages/tweepy/streaming.py", line 361, in _start
+    self._run()
+  File "/usr/local/lib/python2.7/dist-packages/tweepy/streaming.py", line 294, in _run
+    raise exception
+AttributeError: 'NoneType' object has no attribute 'strip'
